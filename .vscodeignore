@@ -5,7 +5,6 @@ src/**
 RELEASE_NOTES.md
 *.vsix
 **/tsconfig.json
-**/eslint.config.mjs
 **/*.map
 **/*.ts
 out/**/*.test.js

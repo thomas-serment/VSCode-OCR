@@ -23,7 +23,7 @@
     "extract"
   ],
   "engines": {
-    "vscode": "^1.120.0"
+    "vscode": "^1.140.0"
   },
   "categories": [
     "Other"
@@ -74,8 +74,24 @@
         "codeocr.defaultLanguage": {
           "type": "string",
           "default": "eng",
-          "enum": ["eng", "fra", "deu", "spa", "ita", "por", "nld"],
-          "enumItemLabels": ["English", "French", "German", "Spanish", "Italian", "Portuguese", "Dutch"],
+          "enum": [
+            "eng",
+            "fra",
+            "deu",
+            "spa",
+            "ita",
+            "por",
+            "nld"
+          ],
+          "enumItemLabels": [
+            "English",
+            "French",
+            "German",
+            "Spanish",
+            "Italian",
+            "Portuguese",
+            "Dutch"
+          ],
           "description": "Language used to recognize text. Its data is downloaded once, on first use."
         }
       }
@@ -85,7 +101,6 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "lint": "eslint src",
     "test": "npm run compile && node --test \"out/**/*.test.js\"",
     "package": "vsce package"
   },
@@ -93,11 +108,9 @@
     "tesseract.js": "^7.0.0"
   },
   "devDependencies": {
-    "@types/node": "22.x",
-    "@types/vscode": "^1.120.0",
+    "@types/node": "^24.19.1",
+    "@types/vscode": "^1.140.0",
     "@vscode/vsce": "^4.0.0",
-    "eslint": "^9.39.3",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.1"
+    "typescript": "^7.0.2"
   }
 }
